@@ -27,7 +27,7 @@ def create_mask(pred_mask):
 @st.cache_resource
 def load_model():
     return tf.keras.models.load_model(
-        "Main_model_2.h5", custom_objects={"dice_coef": dice_coef}
+        "Main_model_2.keras", custom_objects={"dice_coef": dice_coef}
     )
 
 model = load_model()
