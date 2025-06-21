@@ -37,7 +37,8 @@ st.title("Left Ventricle Segmentation Demo")
 
 uploaded = st.file_uploader("Upload a cardiac MRI slice", type=["png","jpg","jpeg"])
 if uploaded:
-    st.image(uploaded, caption="Input Image", use_container_width=True)
+    st.image(img, caption="Input Image", use_container_width=True)
+
 
     if st.button("Segment"):
         with st.spinner("Running segmentation…"):
